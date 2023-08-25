@@ -33,7 +33,39 @@
     font-family: "Inter", sans-serif;
     color: var(--text-color);
   }
+
+  header{
+    background: transparent;
+    height: 70px;
+    max-width: 1920px;
+    min-width: 756px;    
+  }
   
+  header nav li{
+    display: flex;
+    color: white;
+    font-size: 36px;
+    list-style: none;
+    padding: 30px;  
+    
+    align-items: center;  
+  }
+
+  header nav li a{
+    display: flex;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px;
+    border-radius: 50%;
+    transition: .2s ease-in-out;
+  }
+
+  header nav li a:hover{
+    background: rgba(255, 255, 255, 0.08);
+    transform: scale(1.1);
+  }
+
+
+
   #container {
     width: 100%;
     max-width: 588px;
@@ -136,6 +168,10 @@
     border: 1.5px solid var(--text-color);
     transform: scale(1.1);
   }
+
+
+
+  
   /* social-links */
   
   #social-links {
